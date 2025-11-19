@@ -10,14 +10,14 @@ import Trade from "@/components/trade";
 export default function Home() {
   return (
     <div className="bg-background">
-      <Navbar/>
+      {/* <Navbar/> */}
       <Hero/>
       <QuickAccess/>
       <HowItWorks/>
       <Feature/>
       <Benefits/>
       <Trade/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }
