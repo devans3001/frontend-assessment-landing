@@ -5,13 +5,14 @@ import { Button } from "./ui/button";
 function QuickAccess() {
   return (
     <div
-      className="min-h-screen flex flex-col gap-7 justify-center items-center py-2 px-4"
-      style={{ backgroundColor: "hsl(var(--blue-muted) / 0.3)" }}
+      className=" py-20 bg-muted/30"
     >
-      <h1 className="text-(--blue-foreground) text-4xl md:text-5xl font-bold">
+      <div className="container mx-auto px-4 flex flex-col gap-7 justify-center items-center">
+
+      <h1 className="text-foreground text-center text-4xl md:text-5xl font-bold">
         Quick Access
       </h1>
-      <p className="text-(--blue-muted-foreground) text-lg">
+      <p className="text-muted-foreground text-lg text-center">
         Everything you need to start trading across Africa in three simple steps
       </p>
 
@@ -58,6 +59,8 @@ function QuickAccess() {
           </div>
         ))}
       </div>
+      </div>
+
     </div>
   );
 }

@@ -22,7 +22,9 @@ function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 left-0 right-0 z-50 bg-background/95 flex justify-between items-center py-4 px-6 backdrop-blur-sm border-b border-border">
+    <header className=" fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+      <nav className=" container mx-auto py-4 px-6 flex justify-between items-center  ">
+
       {/* Logo */}
       <Link href={"/"}>
         <div className="flex items-center gap-2">
@@ -147,15 +149,15 @@ function Navbar() {
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="ghost" size="icon" className="h-9 w-9">
-              <Menu className="h-5 w-5" />
+            <Menu className="h-5 w-5" />
             </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" className="w-56">
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-56">
             {menuItems.map((item) => (
               <DropdownMenuItem key={item.label} asChild>
-                <Link 
-                  href={item.comingSoon ? `/coming-soon/${item.label}` : `/${item.label}`}
-                  className={`flex items-center justify-between w-full ${
+              <Link 
+              href={item.comingSoon ? `/coming-soon/${item.label}` : `/${item.label}`}
+              className={`flex items-center justify-between w-full ${
                     item.comingSoon ? 'opacity-70' : ''
                   }`}
                 >
@@ -169,7 +171,7 @@ function Navbar() {
               </DropdownMenuItem>
             ))}
             <DropdownMenuItem asChild>
-              <Link href="/coming-soon/contact" className="w-full">
+            <Link href="/coming-soon/contact" className="w-full">
                 Sign In
               </Link>
             </DropdownMenuItem>
@@ -182,7 +184,8 @@ function Navbar() {
         </DropdownMenu>
       </div>
       */}
-    </nav>
+            </nav>
+    </header>
   );
 }
 

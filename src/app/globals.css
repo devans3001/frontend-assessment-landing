@@ -145,6 +145,18 @@
   .bg-gradient-hero {
     background-image: var(--gradient-hero);
   }
+  .animate-float {
+  animation:float 6s ease-in-out infinite
+}
+@keyframes float {
+  0%,
+  to {
+    transform:translateY(0)
+  }
+  50% {
+    transform:translateY(-20px)
+  }
+}
 
   .shadow-\[0_0_0_1px_hsl\(var\(--sidebar-border\)\)\] {
   --tw-shadow: 0 0 0 1px hsl(var(--sidebar-border));

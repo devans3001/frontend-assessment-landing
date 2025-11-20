@@ -9,7 +9,7 @@ import Trade from "@/components/trade";
 
 export default function Home() {
   return (
-    <div className="bg-background">
+    <div className="bg-background overflow-x-hidden">
       {/* <Navbar/> */}
       <Hero/>
       <QuickAccess/>

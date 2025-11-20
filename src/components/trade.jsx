@@ -5,7 +5,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 function Trade() {
   return (
     <div className="bg-gradient-hero py-15">
-      <div className="max-w-4xl mx-auto text-white text-center">
+      <div className="container px-4 mx-auto text-white text-center">
         <h4 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm mb-8">
           <Sparkles /> Join the Future of African Trade
         </h4>
@@ -35,7 +35,7 @@ function Trade() {
           </Button>
         </div>
 
-        <div className="flex items-center justify-center gap-12 mt-12 text-white/80">
+        <div className="flex items-center justify-center gap-5 md:gap-12 mt-12 text-white/80">
           <div className="text-center">
             <p className="text-3xl font-bold text-white">10,000</p>
             <p className="text-sm">Registered Businesses</p>
